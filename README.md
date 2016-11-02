@@ -1,17 +1,14 @@
-# VideYo
-Platform for video just for fun, relax!
+# Router
+A simple Router in PHP
 
 # Technologies
-	- HTML 5 
-	- CSS -> SASS
-	- JS / jQuery
-	- Php
-	- mySQL
-	- Gulp
+	- PHP
+	- HTML
 
 # Tuto
-	1 - Install NODE js : (https://nodejs.org/)[https://nodejs.org/] 
-	2 - Install Gulp : (http://gulpjs.com/)[https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md]
-	3 - Modify files in Assets/
-	4 - When modified, in your terminal (cd PATH/TO/FILE) type : gulp build
-	5 - That's all folks, everything is created in SRC...
+	1 - Download this Router
+	2 - In the index.php every element is called
+	3 - assets/php/elements/header.php -> is calling your header
+	4 - assets/php/elements/footer.php -> is calling your footer
+	5 - 
+	6 - Last but not least : Defines all your routes in assets/php/functions/routes.php
