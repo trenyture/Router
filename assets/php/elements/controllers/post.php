@@ -1,6 +1,6 @@
 <?php
 	
-	$idPost = $paramUrl; 
+	$idPost = $paramUrl;
 	$pageTitle = 'Post '.$idPost;
 
 ?>
