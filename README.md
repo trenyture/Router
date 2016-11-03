@@ -20,7 +20,6 @@ To get the version with the 404page, switch your branch to : version404 <br/>
 	* ``` $pageTitle ``` - Give a title to the page (Use it in Model or Controller)
 	* ``` $paramUrl ``` - Use a parameter of the URl **if exists** (Example the ID, the name...)
 	* ``` $phpPath ``` - If you want to modify the PATH of the php files 
-5. Enjoy it ;)
 
 # Installation instructions
 ## With GIT
@@ -55,9 +54,10 @@ Click on _Clone or Download_ button then on _Download ZIP_
 					| - post.php
 					| - posts.php
 
-# Copyright and licensing information
-**This project is totally free for use and modify!**
+# Copyright
+**© Simon Trichereau - 2016** <br/>
+_This project is totally free for commercial or personnal use and modifications are welcome!_
 
 
-# Contact information for the distributor or programmer
+# Contact information
 To contact me you can send me a message to : [simon.trichereau@gmail.com](mailto:simon.trichereau@gmail.com)
