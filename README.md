@@ -2,11 +2,11 @@
 A Simple Router in PHP using MVC pattern
 
 # Author
-Simon Trichereau
+Simon Trichereau <br/>
 [website](http//simon-tr.com)
 
 # With 404 page version
-To get the version with the 404page, switch your branch to : version404
+To get the version with the 404page, switch your branch to : version404 <br/>
 ``` git checkout version404 ```
 
 # Configuration instructions
@@ -56,7 +56,7 @@ Click on _Clone or Download_ button then on _Download ZIP_
 					| - posts.php
 
 # Copyright and licensing information
-** This project is totally free for use and modify! **
+**This project is totally free for use and modify!**
 
 
 # Contact information for the distributor or programmer
