@@ -1,13 +1,30 @@
 <?php
-	//On appelle la fonction Router et on l'instancie
-	require $phpPath . 'functions/router.php';
-	$route = new Router();
-
-	//On créé la liste de toutes les routes possibles
-	$route->add('/', 'index', 'Votre lecteur de Vidéos!');
-	$route->add('/watch');
-	$route->add('/contact');
 	
-	//On fait tourner la machine (On exécute la fonction) qui nous renvoie l'adresse du modèle
-	$modelUsed = $route->run();
+	//Requiring the router module
+	require $phpPath . 'functions/router.php';
+
+	$router = new Router();
+
+	/**Make the URL list of the site
+	* $router->add(PATH,MODEL);
+	*	PATH = String || MODEL == Name of the MODEL to look for (if == NULL -> Home )
+	*/
+	$router->add('/','home.php');
+	$router->add('/posts','posts.php');
+	$router->add('/post/:id','post.php');
+	$router->add('/profile/:name');
+	$router->add('/contact');
+
+	//Run The Module
+	$result = $router->run();
+	
+	//Return the Result
+	$model = 'home.php';
+	if ($result['model'] != null ) {
+		$model = $result['model'];
+	}
+	if (isset($result['param'])){
+		$paramUrl = $result['param']; //The param of the URL (example ID);
+	}
+
 ?>
