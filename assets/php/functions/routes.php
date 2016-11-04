@@ -17,14 +17,17 @@
 
 	//Run The Module
 	$result = $router->run();
-	
 	//Return the Result
-	$model = 'home.php';
-	if ($result['model'] != null ) {
-		$model = $result['model'];
-	}
-	if (isset($result['param'])){
-		$paramUrl = $result['param']; //The param of the URL (example ID);
+	if($result == false){
+		header('location:404.html');
+	}else{
+		$model = 'home.php';
+		if ($result['model'] != null ) {
+			$model = $result['model'];
+		}
+		if (isset($result['param'])){
+			$paramUrl = $result['param']; //The param of the URL (example ID);
+		}
 	}
 
 ?>

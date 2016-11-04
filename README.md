@@ -30,6 +30,7 @@ Click on _Clone or Download_ button then on _Download ZIP_
 # Architecture
 	| - .htaccess
 	| - index.php
+	| - 404.html
 	| - README.md	
 	| ---- assets
 		| ---- css
