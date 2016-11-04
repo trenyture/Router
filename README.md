@@ -5,10 +5,6 @@ A Simple Router in PHP using MVC pattern
 Simon Trichereau <br/>
 [website](http//simon-tr.com)
 
-# With 404 page version
-To get the version with the 404page, switch your branch to : version404 <br/>
-``` git checkout version404 ```
-
 # Configuration instructions
 1. Install the project
 2. Modify ``` assets/php/functions/routes.php ``` to add all your routes from your Site :
