@@ -14,7 +14,7 @@ To get the version with the 404page, switch your branch to : version404 <br/>
 2. Modify ``` assets/php/functions/routes.php ``` to add all your routes from your Site :
 	* ``` $route->add('URL','MODEL'); ```
 	* ``` $route->add('URL:PARAMETER','MODEL'); ```
-3. Add a Model, a Controller and a View ``` assets/php/elements/models/ ```, ``` assets/php/elements/controllers/ ``` and ``` assets/php/elements/views/ ```
+3. Add a Model **(REQUIRED)**, a Controller and a View ``` assets/php/elements/models/ ```, ``` assets/php/elements/controllers/ ``` and ``` assets/php/elements/views/ ``` for each Route you've created
 4. The routes return the link to the Model, which include controller and view to the page
 5. The variables you would use
 	* ``` $pageTitle ``` - Give a title to the page (Use it in Model or Controller)

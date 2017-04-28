@@ -1,7 +1,4 @@
 <?php
-	
-	//Requiring the router module
-	require $phpPath . 'functions/router.php';
 
 	$router = new Router();
 
@@ -19,9 +16,9 @@
 	$result = $router->run();
 	
 	//Return the Result
-	$model = 'home.php';
-	if ($result['model'] != null ) {
-		$model = $result['model'];
+	$Model = 'home.php';
+	if (!is_null($result['model'])) {
+		$Model = $result['model'];
 	}
 	if (isset($result['param'])){
 		$paramUrl = $result['param']; //The param of the URL (example ID);

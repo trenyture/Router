@@ -1,31 +1,40 @@
 <?php
+
+	//Autoloader to charge all Classes
+	function chargerClasse($classe){
+		require 'class/' . $classe . '.php';
+	}
+	spl_autoload_register('chargerClasse');
+
 	//GLOBALS VARIABLES
-	$phpPath = 'assets/php/'; //Where are all the php files
-	$pageTitle = null; //Title of the page
+	$Title = null; //Title of the page
+	$Model = null; // Model of the page => ! is required
+	$Ctrl = null; // Controller of the page
+	$View = null; // View of the page
 
 	//Requiring the route list (wich include the router function)
-	require $phpPath . 'functions/routes.php';
+	require 'elements/routes.php';
 
 	//Including the model which will give us The Title, The Controller and The View
-	include $phpPath . 'elements/models/' . $model;
+	include 'models/' . $Model;
 	
 	//include the controller if Exists
-	if(isset($ctrl)){
-		include $phpPath . 'elements/controllers/' . $ctrl;
+	if(!is_null($Ctrl)){
+		include 'controllers/' . $Ctrl;
 	}
 
 	/************************************************
 	************** DISPLAY CONTENT ******************
 	************************************************/
-	//including header
-	include $phpPath . 'elements/header.php';
+	if(!is_null($View)){
+		//including header
+		include 'elements/header.php';
 	
-	//including the view if exists
-	if(isset($view)){
-		include $phpPath . 'elements/views/' . $view;
-	}
+		//including the view
+		include 'views/' . $View;
 
-	//including footer
-	include $phpPath . 'elements/footer.php';
+		//including footer
+		include 'elements/footer.php';
+	}
 	
 ?>
